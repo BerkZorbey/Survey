@@ -9,15 +9,24 @@ body{
  background-image:url(../image/sky.jpg);
  background-repeat:no-repeat;
  background-attachment: fixed;
+ font-size:18px;
 
 }
-#main{
+header{
+    position:absolute;
+    top:5%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    
+}
+.main{
     background-color:#DDDDDD;
     border-left: 2px solid #dddddd7c;
     border-right: 2px solid #dddddd;
     
     width:40%;
-    height:100%;
+    height:70%;
     opacity:0.3;
     position:absolute;
     top:50%;
