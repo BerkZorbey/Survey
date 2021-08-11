@@ -8,9 +8,10 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/survey.css">
+    
 </head>
 
-<body>
+<body class="body">
     
         <header>
             <h1>Survey</h1>
@@ -31,49 +32,49 @@
                 </div>
                 <div class="form-group">
                 <label class="kimlik">Yaş  
-                <input type="text" name="Yas" id="Yas" class="form-control" placeholder="  Yaşınızı giriniz.">
+                <input type="number"  min="10" max="99" name="Yas" id="Yas" class="form-control" placeholder="  Yaşınızı giriniz.">
                 </label>
                 </div>
                 
 
                 <div class="form-group">
                 <p>Cinsiyetiniz</p>
-                <label>
-                <input type="radio" name="cinsiyet" id="cinsiyet" value="erkek" class="form-radio">
+                <label class="formlabel">
+                <input type="radio" name="cinsiyet"  value="erkek" class="form-radio">
                 Erkek</label>
-                <label>
-                <input type="radio" name="cinsiyet" id="cinsiyet" value="kadın" class="form-radio">
+                <label class="formlabel">
+                <input type="radio" name="cinsiyet"  value="kadın" class="form-radio">
                 Kadın</label>
                 </div>
 
                 
                 <div class="form-group">
                 <p>Okuduğunuz okulda size ışık kirliliği hakında yeteri kadar bilgi verildi mi?</p>
-                <label> 
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <label class="formlabel"> 
+                <input type="radio" name="soru1" value="evet-verildi" class="form-radio">
                 Evet,verildi. </label>
-                <label>
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <label class="formlabel">
+                <input type="radio" name="soru1" id="soru1"  value="hayır-verilmedi" class="form-radio">
                 Hayır,verilmedi.</label>
                 </div>
 
                 <div class="form-group">
                 <p>Herhangi bir medya yoluyla ışık kirliliği hakkında haberler okudunuz mu?</p>
-                <label>
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <label class="formlabel">
+                <input type="radio" name="soru2" value="evet-okudum" class="form-radio">
                 Evet,okudum. </label>
-                <label>
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <label class="formlabel">
+                <input type="radio" name="soru2" id="soru2"  value="hayır-okumadım" class="form-radio">
                 Hayır,okumadım .</label>
                 </div>
                 
                 <div class="form-group">
                 <p>Okuduğunuz okulda size ışık kirliliği hakında yeteri kadar bilgi verildi mi?</p>
-                <label>
-                <input type="checkbox" name="soru1" id="soru1" value="evet" class="form-checkbox">
+                <label class="formlabel">
+                <input type="radio" name="soru3" value="evet" class="form-radio">
                 Evet,verildi. </label>
-                <label>
-                <input type="checkbox" name="soru1" id="soru1" value="hayır" class="form-checkbox">
+                <label class="formlabel">
+                <input type="radio" name="soru3" value="hayır" class="form-radio">
                 Hayır,verilmedi.</label>
                 </div>
 
@@ -82,6 +83,8 @@
 
             </div>
 
+            <script src="js/jquery-3.6.0.js"></script>
+            <script src="js/changebackground.js"></script>
 </body>
 
 

@@ -5,13 +5,15 @@
     
 }
 
-body{
+.body{
  background-image:url(../image/sky.jpg);
  background-repeat:no-repeat;
  background-attachment: fixed;
  font-size:18px;
-
+ z-index: 1;
+ transition: background-image 2s ease;
 }
+
 header{
     position:absolute;
     top:5%;
@@ -21,12 +23,11 @@ header{
     z-index: 100;
 }
 .main{
-    background-color:#DDDDDD;
-    border-left: 2px solid #dddddd7c;
-    border-right: 2px solid #dddddd;
-    margin-top: 5rem;
+    background-color:rgba(221, 221, 221, 0.4);
+    border: 2px solid rgba(221, 221,221,0.4);
+    margin-top: 7rem;
     width:40%;
-    opacity:0.2;
+    background-image: none;
     position:absolute;
     top:50%;
     left:50%;
@@ -34,10 +35,12 @@ header{
     z-index: 10;
 
 }
+
 .form-group{
    
-    display: grid;
-    grid-row: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 
     
@@ -48,6 +51,12 @@ header{
     min-width:1.25em;
     font-weight: bold;
  
+}
+.form-checkbox{
+    margin:0.2em 0em 0.2em 1em;
+     min-height:1.25em;
+    min-width:1.25em;
+    font-weight: bold;
 }
 .form-control{
     width: 93%;
@@ -63,10 +72,16 @@ header{
     font-weight: bold;
     font-size:18px;
 }
+.formlabel{
+    margin-top:0.5em;
+    padding-left: 1em;
+    font-weight:500;
+    font-size:18px;
+}
 p{
     font-weight: bold;
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
     font-size:1.2rem;
 }
