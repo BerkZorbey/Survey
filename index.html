@@ -18,8 +18,9 @@
             <h1 class="surveyheader">Survey</h1>
             
         </header>
-
-        <div class="main">
+    <div class="main">
+        <!--Kişisel Bilgiler -->
+        <div class="section">
             <form class="form-group" action="">
                 <div class="form-group">
                 <label class="kimlik">Ad-soyad
@@ -36,8 +37,6 @@
                 <input type="number"  min="10" max="99" name="Yas" id="Yas" class="form-control" placeholder="  Yaşınızı giriniz.">
                 </label>
                 </div>
-                
-
                 <div class="form-group">
                 <p>Cinsiyetiniz</p>
                 <label class="formlabel">
@@ -47,228 +46,259 @@
                 <input type="radio" name="cinsiyet"  value="kadın" class="form-radio">
                 Kadın</label>
                 </div>
-
+        </div> 
+        <!--İlk on soru kişisel sorular -->
+        <div>
             <!--1.soru -->
-                <div class="form-group">
-                <p>Okuduğunuz okulda size ışık kirliliği hakkında yeteri kadar bilgi verildi mi?</p>
+                <div class="form-group section">
+                <p>1-Okuduğunuz okulda size ışık kirliliği hakkında yeteri kadar bilgi verildi mi?</p>
                 <label class="formlabel"> 
-                <input type="radio" name="soru1" value="evet-verildi" class="form-radio">
+                <input type="radio" name="soru1" id="soru1.1"value="evet-verildi" class="form-radio">
                 Evet,verildi. </label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1"  value="hayır-verilmedi" class="form-radio">
+                <input type="radio" name="soru1" id="soru1.2"  value="hayır-verilmedi" class="form-radio">
                 Hayır,verilmedi.</label>
                 </div>
+                
             <!--2.soru -->
-                <div class="form-group">
-                <p>Herhangi bir medya yoluyla ışık kirliliği hakkında haberler okudunuz mu?</p>
+                <div class="form-group section">
+                <p>2-Herhangi bir medya yoluyla ışık kirliliği hakkında haberler okudunuz mu?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru2" value="evet-okudum" class="form-radio">
+                <input type="radio" name="soru2" id="soru2.1" value="evet-okudum" class="form-radio">
                 Evet,okudum. </label>
                 <label class="formlabel">
-                <input type="radio" name="soru2" id="soru2"  value="hayır-okumadım" class="form-radio">
+                <input type="radio" name="soru2" id="soru2.2"  value="hayır-okumadım" class="form-radio">
                 Hayır,okumadım .</label>
                 </div>
             <!--3.soru -->    
-                <div class="form-group">
-                <p>Işık kirliliğinin zararlarını , kirliliğe karşı yapılması gereken önlemler vb. bilgileri hangi yollarla öğrendiniz?</p>
+                <div class="form-group section">
+                <p>3-Işık kirliliğinin zararlarını , kirliliğe karşı yapılması gereken önlemler vb. bilgileri hangi yollarla öğrendiniz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru3" value="evet" class="form-radio">
-                Evet,verildi. </label>
+                <input type="checkbox" name="soru3" id="soru3.1" value="birincisecenek" class="form-checkbox">
+                Televizyon</label>
                 <label class="formlabel">
-                <input type="radio" name="soru3" value="hayır" class="form-radio">
-                Hayır,verilmedi.</label>
+                <input type="checkbox" name="soru3" id="soru3.2" value="ikincisecenek" class="form-checkbox">
+                Gazete</label>
+                <label class="formlabel">
+                <input type="checkbox" name="soru3" id="soru3.3" value="ucuncusecenek" class="form-checkbox">
+                İnternet</label>
+                <label class="formlabel">
+                <input type="checkbox" name="soru3" id="soru3.4" value="dorduncusecenek" class="form-checkbox">
+                Okul</label>
+                <label class="formlabel">
+                <input type="checkbox" name="soru3" id="soru3.5" value="besincisecenek" class="form-checkbox">
+                Aile ve arkadaşlar</label>
+                <label class="formlabel">   
+                <input type="checkbox" name="soru3" id="soru3.6" value="altıncısecenek" class="form-checkbox">
+                Şimdiye kadar bu bilgileri öğrenmedim </label>
                 </div>
             <!--4.soru -->    
-                <div class="form-group">
-                <p>Işık kirliliğine karşı önlemler alıyormusunuz?</p>
+                <div class="form-group section">
+                <p>4-Işık kirliliğine karşı önlemler alıyormusunuz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru4" id="soru4.1" value="evet" class="form-radio">
                 Evet alıyorum. </label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru4" id="soru4.2" value="hayır" class="form-radio">
                 Hayır almıyorum.</label>
                 </div>
             <!--5.soru -->
-                <div class="form-group">
-                <p>Işık kirliliğine karşı nasıl önlemler alıyorsunuz?</p>
+                <div class="form-group section">
+                <p>5-Işık kirliliğine karşı nasıl önlemler alıyorsunuz?</p>
                 <label class="formlabel">
-                <input type="checkbox" name="soru1" id="soru1" value="birincisecenek" class="form-checkbox">
+                <input type="checkbox" name="soru5" id="soru5.1" value="birincisecenek" class="form-checkbox">
                 Işık yayılmasın diye panjurları veya pencereleri kapatırım.</label>
                 <label class="formlabel">
-                <input type="checkbox" name="soru1" id="soru1" value="ikincisecenek" class="form-checkbox">
+                <input type="checkbox" name="soru5" id="soru5.2" value="ikincisecenek" class="form-checkbox">
                 Odada ki gereksiz tüm ışıkları kaparım.</label>
                 <label class="formlabel">
-                <input type="checkbox" name="soru1" id="soru1" value="ucuncusecenek" class="form-checkbox">
+                <input type="checkbox" name="soru5" id="soru5.3" value="ucuncusecenek" class="form-checkbox">
                 Tasarruflu ampulleri kullanırım.</label>
                 <label class="formlabel">
-                <input type="checkbox" name="soru1" id="soru1" value="dorduncusecenek" class="form-checkbox">
+                <input type="checkbox" name="soru5" id="soru5.4" value="dorduncusecenek" class="form-checkbox">
                 Önlem almıyorum.</label>
                 <label class="formlabel">
-                <input type="checkbox" name="soru1" id="soru1" value="besincisecenek" class="form-checkbox">
+                <input type="checkbox" name="soru5" id="soru5.5" value="besincisecenek" class="form-checkbox">
                 Işığın kirlisi mi olur?</label>
                 </div>
             <!--6.soru -->
-                <div class="form-group">
-                <p>Işık kirliliğine neden olanlara tepkiniz oluyor mu?</p>
+                <div class="form-group section">
+                <p>6-Işık kirliliğine neden olanlara tepkiniz oluyor mu?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru6" id="soru6.1" value="evet" class="form-radio">
                 Evet, yaptıklarının neden olduğu kötü sonuçları anlatıyorum.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru6" id="soru6.2" value="hayır" class="form-radio">
                 Tepkim olmuyor.</label>
                 </div>
             <!--7.soru --> 
-                <div class="form-group">
-                <p>Işık kirliliğine karşı  proje veya benzeri çalışmalarda bulundunuz mu?</p>
+                <div class="form-group section">
+                <p>7-Işık kirliliğine karşı  proje veya benzeri çalışmalarda bulundunuz mu?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru7" id="soru7.1" value="evet" class="form-radio">
                 Evet,bulundum. </label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru7" id="soru7.2" value="hayır" class="form-radio">
                 Hayır,bulunmadım.</label>
                 </div>
             <!--8.soru -->
-                <div class="form-group">
-                <p>Evdeyken aydınlatmaları ne ölçüde açarsınız?</p>
+                <div class="form-group section">
+                <p>8-Evdeyken aydınlatmaları ne ölçüde açarsınız?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="çok" class="form-radio">
+                <input type="radio" name="soru8" id="soru8.1" value="çok" class="form-radio">
                 Tüm odaların ışıkları açık.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="birkaç" class="form-radio">
+                <input type="radio" name="soru8" id="soru8.2" value="birkaç" class="form-radio">
                 Sadece birkaç odanın ışığı açık.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="bir" class="form-radio">
+                <input type="radio" name="soru8" id="soru8.3" value="bir" class="form-radio">
                 Hangi odadaysam sadece o odanın ışığı açık olur.</label>
                 </div>
             <!--9.soru -->
-                <div class="form-group">
-                <p>Evinizde ya da şirket ofisinizde aydınlatma araçlarınızda hareket sensörlü sistem kullanılıyor mu?</p>
+                <div class="form-group section">
+                <p>9-Evinizde ya da şirket ofisinizde aydınlatma araçlarınızda hareket sensörlü sistem kullanılıyor mu?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru9" id="soru9.1" value="evet" class="form-radio">
                 Evet kullanılıyor.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru9" id="soru9.2" value="hayır" class="form-radio">
                 Hayır kullanılmıyor.</label>
                 </div>
             <!--10.soru -->
-                <div class="form-group">
-                <p>Geceleri telefonunuzun veya bilgisayarınızın yerleşik gece modu özelliğini kullanır mısınız?</p>
+                <div class="form-group section">
+                <p>10-Geceleri telefonunuzun veya bilgisayarınızın yerleşik gece modu özelliğini kullanır mısınız?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru10" id="soru10.1" value="evet" class="form-radio">
                 Evet, kullanırım.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru10" id="soru10.2" value="hayır" class="form-radio">
                 Hayır, kullanmam.</label>
                 </div>
+
+        </div>
+        <!-- on ve onbeş arası sorular şehir hakkında sorular -->
+        <div>
             <!--11.soru -->
-                <div class="form-group">
-                <p>Oturduğunuz şehirdeki ışık kirliliği sizin hayatınızı etkiliyor mu?</p>
+                <div class="form-group section">
+                <p>11-Oturduğunuz şehirdeki ışık kirliliği sizin hayatınızı etkiliyor mu?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru11" id="soru11.1" value="evet" class="form-radio">
                 Evet,etkiliyor.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru11" id="soru11.2" value="hayır" class="form-radio">
                 Hayır,etkilemiyor.</label>
                 </div>
             <!--12.soru -->
-                <div class="form-group">
-                <p>Buluğunduğunuz şehirden veya yerleşkeden yıldızları görebiliyormusunuz?</p>
+                <div class="form-group section">
+                <p>12-Buluğunduğunuz şehirden veya yerleşkeden yıldızları görebiliyormusunuz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="birincisecenek" class="form-radio">
+                <input type="radio" name="soru12" id="soru12.1" value="birincisecenek" class="form-radio">
                 Ben samanyolunu görüyorum!</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="ikincisecenek" class="form-radio">
+                <input type="radio" name="soru12" id="soru12.2" value="ikincisecenek" class="form-radio">
                 Eh 10-20 yıldız görüyorum.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="ucuncusecenek" class="form-radio">
+                <input type="radio" name="soru12" id="soru12.3" value="ucuncusecenek" class="form-radio">
                 Yıldız mı o da ne?</label>
                 </div>
             <!--13.soru -->
-                <div class="form-group">
-                <p>Fazla gece aydınlatması evlerden içeri sızmakta, uykusuzluğa sebep olmaktadır.Oturduğunuz mahalledeki ışık yoğunluğu sizi rahatsız ediyor mu?</p>
+                <div class="form-group section">
+                <p>13-Fazla gece aydınlatması evlerden içeri sızmakta, uykusuzluğa sebep olmaktadır.Oturduğunuz mahalledeki ışık yoğunluğu sizi rahatsız ediyor mu?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru13" id="soru13.1" value="evet" class="form-radio">
                 Evet,ediyor.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru13" id="soru13.2" value="hayır" class="form-radio">
                 Hayır,bizim sokakta sokak zor aydınlanıyor.</label>
                 </div>
             <!--14.soru -->
-                <div class="form-group">
-                <p>Buluğundunuz şehrin sokak lambaları hangi şekildeki gibi ışık vermektedir?</p>
+                <div class="form-group section">
+                    <blockquote cite="https://www.yakanaydinlatma.com/isik-kirliligi-nedir">
+                        <figure>
+                            <img src="image/isik-kirliligi.jpg" alt="ışık-kirliliği-anlamak" id="lamba-sekil">
+                            
+                        </figure>
+                    </blockquote>
+                <p>14-Buluğundunuz şehrin sokak lambaları hangi şekildeki gibi ışık vermektedir?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="cokkotu" class="form-radio">
+                <input type="radio" name="soru14" id="soru14.1" value="cokkotu" class="form-radio">
                 Çok kötü seçeneğindeki gibi </label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="kotu" class="form-radio">
+                <input type="radio" name="soru14" id="soru14.2" value="kotu" class="form-radio">
                 Kötü seçeneğindeki gibi.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="dahaiyi" class="form-radio">
+                <input type="radio" name="soru14" id="soru14.3" value="dahaiyi" class="form-radio">
                 Daha iyi seçeneğindeki gibi .</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="eniyi" class="form-radio">
+                <input type="radio" name="soru14" id="soru14.4" value="eniyi" class="form-radio">
                 En iyi seçeneğindeki gibi.</label>
                 </div>
             <!--15.soru -->
-                <div class="form-group">
-                <p>Şehirler de yapılan yanlış şekilde kullanılan ışık kaynaklarını(yukarıdaki sorudaki daha kötü seçeneğinde bulunan sokak lambası vb.) yetkililere bildiriyor musunuz?</p>
+                <div class="form-group section">
+                <p>15-Şehirler de yapılan yanlış şekilde kullanılan ışık kaynaklarını(yukarıdaki sorudaki daha kötü seçeneğinde bulunan sokak lambası vb.) yetkililere bildiriyor musunuz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru15" id="soru15.1" value="evet" class="form-radio">
                 Evet,bildiriyorum.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru15" id="soru15.2" value="hayır" class="form-radio">
                 Hayır,bildirmiyorum.</label>
                 </div>
+
+        </div>
+        <!-- son beş soru ülke hakkında sorular --> 
+        <div>       
             <!--16.soru -->
-                <div class="form-group">
-                <p>Türkiye de ışık kirliliği için yapılan önlemler sizce yeterli mi?</p>
+                <div class="form-group section">
+                <p>16-Türkiye de ışık kirliliği için yapılan önlemler sizce yeterli mi?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru16" id="soru16.1" value="evet" class="form-radio">
                 Evet,yeterli.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru16" id="soru16.2" value="hayır" class="form-radio">
                 Hayır,daha fazlası yapılabilirdi.</label>
                 </div>
             <!--17.soru -->
-                <div class="form-group">
-                <p>Türkiye de yaşayan insanların ışık kirliliği hakkında yeteri kadar bilince sahip olduğunu düşünüyormusunuz?</p>
+                <div class="form-group section">
+                <p>17-Türkiye de yaşayan insanların ışık kirliliği hakkında yeteri kadar bilince sahip olduğunu düşünüyormusunuz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
-                Evet,herkes ışık kirliliği hakkında bilinç sahibi.</label>
+                <input type="radio" name="soru17" id="soru17.1" value="evet" class="form-radio">
+                Evet, herkes ışık kirliliği hakkında bilinç sahibi.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
-                Hayır,ışık kirliliğinden haberleri olduğunu sanmıyorum.</label>
+                <input type="radio" name="soru17" id="soru17.2" value="hayır" class="form-radio">
+                 Hayır, ışık kirliliğinden haberleri olduğunu sanmıyorum.</label>
                 </div>
             <!--18.soru -->
-                <div class="form-group">
-                <p>Türkiye deki ışık kirliliği ile ilgili çalışmaları takip ediyor musunuz?</p>
+                <div class="form-group section">
+                <p>18-Türkiye deki ışık kirliliği ile ilgili çalışmaları takip ediyor musunuz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru18" id="soru18.1" value="evet" class="form-radio">
                 Evet,takip ediyorum.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru18" id="soru18.2" value="hayır" class="form-radio">
                 Hayır,takip etmiyorum.</label>
                 </div>
             <!--19.soru -->
-                <div class="form-group">
-                <p>Türkiye de okullarda yeteri kadar ışık kirliliği vb kirlilikler 
+                <div class="form-group section">
+                <p>19-Türkiye de okullarda yeteri kadar ışık kirliliği vb kirlilikler 
                 hakkında yeteri kadar bilgi verildiğini düşünüyor musunuz?</p>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="evet" class="form-radio">
+                <input type="radio" name="soru19" id="soru19.1" value="evet" class="form-radio">
                 Evet,yeteri kadar bilgi veriliyor.</label>
                 <label class="formlabel">
-                <input type="radio" name="soru1" id="soru1" value="hayır" class="form-radio">
+                <input type="radio" name="soru19" id="soru19.2" value="hayır" class="form-radio">
                 Bize okulda ışık kirliliği ile ilgili hiçbir bilgi verilmedi.</label>
                 </div>
             <!--20.soru -->
-                <div class="form-group">
-                <p>Türkiyenin ışık kirliliğini azaltma konusundaki çalışmalarını değerlendirirseniz 5 üzerinden kaç puan verirsiniz?</p>
-                
+                <div class="form-group section">
+                <p>20-Türkiyenin ışık kirliliğini azaltma konusundaki çalışmalarını değerlendirirseniz 5 üzerinden kaç puan verirsiniz?</p>
+                </div>
 
             </form>
-
-            </div>
-
+        </div>
+    </div>    
+        <footer class="footer">
+            <p>Created by BerkZorbey</p>
+        </footer>
             <script src="js/jquery-3.6.0.js"></script>
             <script src="js/changebackground.js"></script>
 </body>

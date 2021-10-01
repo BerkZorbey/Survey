@@ -12,7 +12,7 @@
  background-attachment: fixed;
  font-size:18px;
  
- transition: background-image 2s ease;
+ transition: background-image 1.5s ease;
 }
 
 .surveyheader{
@@ -23,9 +23,14 @@
     padding-bottom: 1%;
 }
 .main{
+    background-image: none;
+}
+.section{
     background-color:rgba(221, 221, 221, 0.4);
     border: 2px solid rgba(221, 221,221,0.4);
+    border-radius: 10px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width:40%;
     background-image: none;
     margin-left: auto;
@@ -33,6 +38,9 @@
    
    
 
+}
+.section:last-child{
+    margin-bottom: 0.5rem;
 }
 
 .form-group{
@@ -49,9 +57,11 @@
      min-height:1.25em;
     min-width:1.25em;
     font-weight: bold;
- 
+  
 }
+
 .form-checkbox{
+    
     margin:0.2em 0em 0.2em 1em;
      min-height:1.25em;
     min-width:1.25em;
@@ -66,21 +76,46 @@
 }
 .kimlik {
     
+    border-bottom:1px;
     margin-top:1.5em;
     padding-left: 1em;
     font-weight: bold;
-    font-size:18px;
+    font-size:22px;
 }
 .formlabel{
     margin-top:0.5em;
     padding-left: 1em;
-    font-weight:500;
-    font-size:18px;
+    font-weight: 550;
+    font-size:1.3rem;
+}
+.formlabel:last-child{
+    margin-bottom: 2rem;
 }
 p{
+    color:rgb(45, 9, 82);
     font-weight: bold;
     margin-top: 2rem;
     margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 1rem;
-    font-size:1.2rem;
+    font-size:1.5rem;
+}
+.footer{
+    
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-bottom:0.5rem;
+}
+.footer p{
+    color: rgb(255, 255, 255);
+}
+#lamba-sekil{
+    width:95%;
+    height: 250px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+blockquote{
+    margin-top:1rem;
 }
