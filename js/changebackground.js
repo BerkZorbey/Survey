@@ -1,4 +1,5 @@
 var num=0;
+
 var url= 'url("image/sky.jpg")';
 var url1= 'url("image/sky2.jpg")';
 var url2='url("image/sky3.jpg")';
@@ -125,24 +126,65 @@ var url3='url("image/sky4.jpg")';
     //background-image değiştirme
     if(num>45){
         $(".body").css("background-image",url3);
-        $(".section").css("background-color","rgba(255, 255, 255, 0.6)");
+        $(".section").css("background-color","rgba(255, 255, 255, 0.7)");
+        $("header").css("background-color","rgba(255, 255, 255, 0.7)");
+        $(".footer").css("background-color","rgba(255, 255, 255, 0.7)");
         $("p").css("color","rgb(25,25,112)");
     }
     if(num<45 && num>30){
         $(".body").css("background-image",url2);
-        $(".section").css("background-color","rgba(244, 234, 253,0.5)");
+        $(".section").css("background-color","rgba(244, 234, 253,0.6)");
+        $("header").css("background-color","rgba(255, 255, 255, 0.7)");
+        $(".footer").css("background-color","rgba(255, 255, 255, 0.7)");
         $("p").css("color","rgb(25,25,112)");
     }
     if(num>15 && num<30){
         $(".body").css("background-image",url1);
-        $(".section").css("background-color","rgba(221, 221, 221, 0.6)");
+        $(".section").css("background-color","rgba(255, 255, 255, 0.5)");
+        $("header").css("background-color","rgba(255, 255, 255, 0.6)");
+        $(".footer").css("background-color","rgba(255, 255, 255, 0.6)");
         $("p").css("color","rgb(25,25,112)");
     }
     if(num < 15){
-        
+        $(".footer p").css("color","rgb(0, 0, 0)");
         $(".body").css("background-image",url);
-        $(".section").css("background-color","rgba(221, 221, 221, 0.4)");
-
-
+        $(".section").css("background-color","rgba(255, 255, 255, 0.4)");
     }
+
+    
+   
 });
+
+const ratingStars = [...document.getElementsByClassName("rating_star")];
+
+function executeRating(stars) {
+  const starClassActive = "rating_star fas fa-star";
+  const starClassInactive = "rating_star far fa-star";
+  const starsLength = stars.length;
+  let i;
+ var deger=0;
+  stars.map((star) => {
+    star.onclick = () => {
+      i = stars.indexOf(star);
+
+      if (star.className===starClassInactive) {
+        for (i; i >= 0; --i){ stars[i].className = starClassActive; }
+        
+      } 
+      
+      else {
+        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+      }
+     deger=  i<starsLength  ? stars.indexOf(star)+1:stars.indexOf(star);
+     document.getElementById("soru20").value = deger;
+     
+      
+    };
+    
+    
+  });
+  
+}
+
+    
+executeRating(ratingStars);
