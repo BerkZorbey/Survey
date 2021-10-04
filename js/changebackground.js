@@ -163,6 +163,11 @@ function executeRating(stars) {
   const starsLength = stars.length;
   let i;
  var deger=0;
+  document.getElementById("reset1").addEventListener("click",(function(){
+      for(i=0;i<starsLength;i++) stars[i].className = starClassInactive;
+  }));
+      
+  
   stars.map((star) => {
     star.onclick = () => {
       i = stars.indexOf(star);
@@ -184,7 +189,7 @@ function executeRating(stars) {
     
   });
   
-}
-
-    
+}   
 executeRating(ratingStars);
+
+
