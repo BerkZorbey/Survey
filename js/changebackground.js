@@ -165,6 +165,11 @@ function executeRating(stars) {
  var deger=0;
   document.getElementById("reset1").addEventListener("click",(function(){
       for(i=0;i<starsLength;i++) stars[i].className = starClassInactive;
+      $(".footer p").css("color","rgb(0, 0, 0)");
+      $(".body").css("background-image",url);
+      $(".section").css("background-color","rgba(255, 255, 255, 0.4)");
+      $(".footer").css("background-color","rgba(255, 255, 255, 0.5)");
+      $("header").css("background-color","rgba(255, 255, 255, 0.5)");
   }));
       
   
