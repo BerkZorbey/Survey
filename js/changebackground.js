@@ -420,6 +420,7 @@ var i19=0;
         $(".section").css("background-color","rgba(255, 255, 255, 0.7)");
         $("header").css("background-color","rgba(255, 255, 255, 0.7)");
         $(".footer").css("background-color","rgba(255, 255, 255, 0.7)");
+        $("#comment").css("background-color","rgba(255, 255, 255, 0.7)");
         $("p").css("color","rgb(25,25,112)");
     }
     if(num<45 && num>30){
@@ -427,6 +428,7 @@ var i19=0;
         $(".section").css("background-color","rgba(244, 234, 253,0.6)");
         $("header").css("background-color","rgba(255, 255, 255, 0.7)");
         $(".footer").css("background-color","rgba(255, 255, 255, 0.7)");
+        $("#comment").css("background-color","rgba(255, 255, 255, 0.7)");
         $("p").css("color","rgb(25,25,112)");
     }
     if(num>15 && num<30){
@@ -434,6 +436,7 @@ var i19=0;
         $(".section").css("background-color","rgba(255, 255, 255, 0.5)");
         $("header").css("background-color","rgba(255, 255, 255, 0.6)");
         $(".footer").css("background-color","rgba(255, 255, 255, 0.6)");
+        $("#comment").css("background-color","rgba(255, 255, 255, 0.6)");
         $("p").css("color","rgb(25,25,112)");
     }
     if(num < 15){
@@ -462,6 +465,7 @@ function executeRating(stars) {
       $(".section").css("background-color","rgba(255, 255, 255, 0.4)");
       $(".footer").css("background-color","rgba(255, 255, 255, 0.5)");
       $("header").css("background-color","rgba(255, 255, 255, 0.5)");
+      $("#comment").css("background-color","rgba(255, 255, 255, 0.5)");
       num=0;
       soru3_1=document.getElementById("soru3.1").disabled =false;
     soru3_2=document.getElementById("soru3.2").disabled =false;
