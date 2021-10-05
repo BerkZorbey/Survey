@@ -53,128 +53,365 @@ function disablecheckbox_5() {
         
         return soru5_1 + soru5_2 +soru5_3 + soru5_4 +soru5_5;}
 }
+var i1=0;
+var i2=0;
+var i4=0;
+var i6=0;
+var i7=0;
+var i8=0;
+var i9=0;
+var i10=0;
+var i11=0;
+var i12=0;
+var i13=0;
+var i14=0;
+var i15=0;
+var i18=0;
+var i19=0;
  $('.form-radio').change(function() {
      
     //1.soru
+    
      if(this.id == 'soru1.1'){
-        num-=5;
-    }
+        if(i1==0){
+         num-=5;
+        i1=1;
+        }
+        else if(i1==1){
+           num-=10; 
+        } 
+    } 
     else if(this.id  == 'soru1.2'){
-        num+=5;
-    }    
+        if(i1==0){
+            num+=5;
+           i1=1;
+           }
+           else if(i1==1){
+              num+=10; 
+           } 
+    } 
+       
     //2.soru
    else if(this.id == 'soru2.1'){
+      if(i2==0){
         num-=3;
+       i2=1;
+       }
+       else if(i2==1){
+          num-=6; 
+       } 
+        
     }
     else if(this.id == 'soru2.2'){
-        num+=3;
+        if(i2==0){
+            num+=3;
+           i2=1;
+           }
+           else if(i2==1){
+              num+=6; 
+           } 
+        
     }  
     //4.soru
     else if(this.id=="soru4.1"){
-        num-=3;
+        if(i4==0){
+            num-=3;
+           i4=1;
+           }
+           else if(i4==1){
+              num-=6; 
+           } 
+        
     }
     else if(this.id=="soru4.2"){
-        num+=3;
+        if(i4==0){
+            num+=3;
+           i4=1;
+           }
+           else if(i4==1){
+              num+=6; 
+           } 
     }
+
     //6.soru
     else if(this.id=="soru6.1"){
-        num-=5;
+        if(i6==0){
+            num-=5;
+           i6=1;
+           }
+           else if(i6==1){
+              num-=10; 
+           } 
+        
     }
     else if(this.id=="soru6.2"){
-        num+=5;
+        if(i6==0){
+            num+=5;
+           i6=1;
+           }
+           else if(i6==1){
+              num+=10; 
+           } 
+        
     }
+
     //7.soru
     else if(this.id=="soru7.1"){
-        num-=3;
+        if(i7==0){
+            num-=3;
+           i7=1;
+           }
+           else if(i7==1){
+              num-=6; 
+           } 
+       
     }
     else if(this.id=="soru7.2"){
-        num+=3;
+        if(i7==0){
+            num+=3;
+           i7=1;
+           }
+           else if(i7==1){
+              num+=6; 
+           } 
+        
     }
-    //8.soru
+
+    //8.soru hatalı
     else if(this.id=="soru8.1"){
-        num+=5;
+        if(i8==0){
+            num+=5;
+           i8=1;
+           }
+           else if(i8==1){
+              num+=10; 
+           } 
+        
     }
-    else if(this.id=="soru8.2"){
-        num+=2;
-    }
+    
     else if(this.id=="soru8.3"){
-        num-=2;
+        if(i8==0){
+            num-=5;
+           i8=1;
+           }
+           else if(i8==1){
+              num-=10; 
+           } 
+        
     }
+
     //9.soru
     else if(this.id=="soru9.1"){
-        num-=5;
+        if(i9==0){
+            num-=5;
+           i9=1;
+           }
+           else if(i9==1){
+              num-=10; 
+           } 
+     
     }
     else if(this.id=="soru9.2"){
-        num+=5;
+        if(i9==0){
+            num+=5;
+           i9=1;
+           }
+           else if(i9==1){
+              num+=10; 
+           } 
+       
     }
     //10.soru
     else if(this.id=="soru10.1"){
-        num-=5;
+        if(i10==0){
+            num-=5;
+           i10=1;
+           }
+           else if(i10==1){
+              num-=10; 
+           } 
+        
     }
     else if(this.id=="soru10.2"){
-        num+=5;
+        if(i10==0){
+            num+=5;
+           i10=1;
+           }
+           else if(i10==1){
+              num+=10; 
+           } 
+        
     }
     //11.soru
     else if(this.id=="soru11.1"){
-        num-=5;
+        if(i11==0){
+            num-=5;
+           i11=1;
+           }
+           else if(i11==1){
+              num-=10; 
+           } 
+       
     }
     else if(this.id=="soru11.2"){
-        num+=5;
+        if(i11==0){
+            num+=5;
+           i11=1;
+           }
+           else if(i11==1){
+              num+=10; 
+           } 
+       
     }
-    //12.soru
+    //12.soru hatalı
     else if(this.id=="soru12.1"){
-        num-=5;
+        if(i12==0){
+            num-=5;
+           i12=1;
+           }
+           else if(i12==1){
+              num-=10; 
+           } 
+       
     }
-    else if(this.id=="soru12.2"){
-        num+=2;
-    }
+    
     else if(this.id=="soru12.3"){
-        num+=5;
+        if(i12==0){
+            num+=5;
+           i12=1;
+           }
+           else if(i12==1){
+              num+=10; 
+           } 
+       
     }
     //13.soru
     else if(this.id=="soru13.1"){
-        num-=5;
+        if(i13==0){
+            num-=5;
+           i13=1;
+           }
+           else if(i13==1){
+              num-=10; 
+           } 
+        
     }
     else if(this.id=="soru13.2"){
-        num+=5;
+        if(i13==0){
+            num+=5;
+           i13=1;
+           }
+           else if(i13==1){
+              num+=10; 
+           } 
+       
     }
     
-    //14.soru
+    //14.soru hatalı
     else if(this.id=="soru14.1"){
-        num+=10;
+        if(i14==0){
+            num+=10;
+           i14=1;
+           }
+           else if(i14==1){
+              num+=20; 
+           } 
+        
     }
     else if(this.id=="soru14.2"){
-        num+=5;
+        if(i14==0){
+            num+=5;
+           i14=1;
+           }
+           else if(i14==1){
+              num+=10; 
+           } 
+        
     }
     else if(this.id=="soru14.3"){
-        num+=2;
+        if(i14==0){
+            num+=2;
+           i14=1;
+           }
+           else if(i14==1){
+              num+=4; 
+           } 
+        
     }
     else if(this.id=="soru14.4"){
-        num-=5;
+        if(i14==0){
+            num-=5;
+           i14=1;
+           }
+           else if(i14==1){
+              num-=10; 
+           } 
+        
     }
     //15.soru
     else if(this.id=="soru15.1"){
-        num-=5;
+        if(i15==0){
+            num-=5;
+           i15=1;
+           }
+           else if(i15==1){
+              num-=10; 
+           } 
+        
     }
     else if(this.id=="soru15.2"){
-        num+=5;
+        if(i15==0){
+            num+=5;
+           i15=1;
+           }
+           else if(i15==1){
+              num+=10; 
+           } 
+       
     }
     
     
 
     //18.soru
     else if(this.id=="soru18.1"){
-        num-=5;
+        if(i18==0){
+            num-=5;
+           i18=1;
+           }
+           else if(i18==1){
+              num-=10; 
+           } 
+        
     }
     else if(this.id=="soru18.2"){
-        num+=5;
+        if(i18==0){
+            num+=5;
+           i18=1;
+           }
+           else if(i18==1){
+              num+=10; 
+           } 
     }
     //19.soru
     else if(this.id=="soru19.1"){
-        num-=5;
+        if(i19==0){
+            num-=5;
+           i19=1;
+           }
+           else if(i19==1){
+              num-=10; 
+           } 
+       
     }
     else if(this.id=="soru19.2"){
-        num+=5;
+        if(i19==0){
+            num+=5;
+           i19=1;
+           }
+           else if(i19==1){
+              num+=10; 
+           } 
+        
     }
 
     //background-image değiştirme
@@ -218,7 +455,7 @@ function executeRating(stars) {
   let i;
  var deger=0;
  //reset tuşuna basınca sıfırla herşeyi
-  document.getElementById("reset1").addEventListener("click",(function(){
+  document.getElementById("reset").addEventListener("click",(function(){
       for(i=0;i<starsLength;i++) stars[i].className = starClassInactive;
       $(".footer p").css("color","rgb(0, 0, 0)");
       $(".body").css("background-image",url);

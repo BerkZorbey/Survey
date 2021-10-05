@@ -32,12 +32,21 @@ background-position: center;
  transition: background-image 1.5s ease;
 }
 
-.surveyheader{
+#title{
     display: flex;
     justify-content: center;
     margin:auto;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+#description{
+    display: flex;
+    justify-content: center;
+   margin-left: 5%;
+   margin-right: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 .main{
     background-image: none;
@@ -200,6 +209,13 @@ input[type=reset]{
 }
 .rating{
     margin-left: 2rem;
+}
+#comment{
+    
+    resize: vertical;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 5%;
 }
 
 /*media*/
