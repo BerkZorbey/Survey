@@ -216,6 +216,7 @@ input[type=reset]{
   padding: 0.5rem;
     resize: vertical;
     max-height: 240px;
+    font-size: 18px;
    background-color: var(--h-f-background-color);
     margin-right: auto;
     margin-left: 5%;
@@ -268,8 +269,15 @@ input[type=reset]{
     .footer{
         width: 70%;
     }
+    #comment{
+        font-size: 14px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
  }
  @media(max-width:360px){
+     
         .kimlik{
             padding-left: 0.5em;
         }
