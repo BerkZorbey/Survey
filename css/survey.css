@@ -30,6 +30,9 @@ background-position: center;
  font-size:18px;
  
  transition: background-image 1.5s ease;
+ -o-transition:background-image 1.5s ease ;
+ -moz-transition: background-image 1.5s ease;
+ -webkit-transition: background-image 1.5s ease;
 }
 
 #title{
