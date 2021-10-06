@@ -153,7 +153,7 @@ p{
     margin-right: 2rem;
     margin-bottom: 1rem;
     font-size:1.35rem;
-    font-family: var(--font-f-p);
+    font-family: var(--font-f-p,"Comic Sans MS");
 }
 .footer{
     border-radius: 5px !important;
