@@ -10,9 +10,29 @@
     <link rel="stylesheet" href="css/survey.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="shortcut icon" href="survey-icon.ico" type="image/x-icon">
+
+<script>
+    function preload(){
+        var image = new Image();
+       
+        // Image for transition
+        image.src ="image/sky2.jpg";
+        image.src1 ="image/sky3.jpg";
+        image.src2 ="image/sky4.jpg";
+        image.onload = function () {
+          $(".element").css("background-image", 
+          'url("image.src")');
+         $(".element").css("background-image", 
+          'url("image.src1")');
+          $(".element").css("background-image", 
+          'url("image.src2")');
+    };
+       }   
+      </script>
+    
 </head>
 
-<body class="body">
+<body class="body" onload="preload()">
     
         <header>
             <h1 id="title">Anket Formu</h1>
@@ -22,7 +42,7 @@
     <div class="main">
         <!--Kişisel Bilgiler -->
         <div class="section">
-            <form class="form-group" id="survey-form" action="mailto:zorbeyanket@gmail.com" autocomplete="on" method="POST" enctype="text/plain" accept-charset="utf-8">
+            <form class="form-group" id="survey-form" action=""  autocomplete="on" method="POST" enctype="text/plain" accept-charset="utf-8">
                 <div class="form-group">
                 <label class="kimlik" id="name-label">Ad-soyad
                 <input type="text" name="adsoyad" id="name" class="form-control" placeholder="Ad ve Soyadınızı giriniz." required>

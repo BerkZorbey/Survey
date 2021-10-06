@@ -10,8 +10,9 @@
     --input-reset-bgcolor:#dc3545;
     --font-f-header:serif;
     --font-f-footer:monospace;
-    --font-f-p:cursive;
+    --font-f-p:Verdana;
     --font-f-label:monospace;
+    --background-image:url(../image/sky.jpg);
 }
 
 
@@ -22,17 +23,27 @@
 }
 
 .body{
- background-image:url(../image/sky.jpg);
+ background-image:var(--background-image);
  background-repeat:no-repeat;
  background-attachment:fixed;
  background-size: cover;
 background-position: center;
  font-size:18px;
  
- transition: background-image 1.5s ease;
- -o-transition:background-image 1.5s ease ;
- -moz-transition: background-image 1.5s ease;
- -webkit-transition: background-image 1.5s ease;
+ transition-property: background-image;
+ transition-timing-function: ease;
+ transition-duration: 1.5s;
+ -moz-transition-property: background-image;
+ -moz-transition-timing-function: ease;
+ -moz-transition-duration: 1.5s;
+ -webkit-transition-property: background-image;
+ -webkit-transition-timing-function: ease;
+ -webkit-transition-duration: 1.5s;
+ -o-transition-property: background-image;
+ -o-transition-timing-function: ease;
+ -o-transition-duration: 1.5s;
+ 
+ 
 }
 
 #title{
@@ -152,7 +163,7 @@ p{
     margin-right: 2rem;
     margin-bottom: 1rem;
     font-size:1.35rem;
-    font-family: var(--font-f-p);
+    font-family: var(--font-f-p,"sans-serif");
 }
 .footer{
     border-radius: 5px !important;
