@@ -10,7 +10,7 @@
     --input-reset-bgcolor:#dc3545;
     --font-f-header:serif;
     --font-f-footer:monospace;
-    --font-f-p:cursive;
+    --font-f-p:Comic Sans MS, Comic Sans, cursive;
     --font-f-label:monospace;
 }
 
@@ -30,6 +30,9 @@ background-position: center;
  font-size:18px;
  
  transition: background-image 1.5s ease;
+ -moz-transition:background-image 1.5s ease ;
+ -webkit-transition: background-image 1.5s ease;
+ -o-transition: background-image 1.5s ease;
  
 }
 
