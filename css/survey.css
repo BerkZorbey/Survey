@@ -12,6 +12,7 @@
     --font-f-footer:monospace;
     --font-f-p:Verdana;
     --font-f-label:monospace;
+    --background-image:url(../image/sky.jpg);
 }
 
 
@@ -22,7 +23,7 @@
 }
 
 .body{
- background-image:url(../image/sky.jpg);
+ background-image:var(--background-image,"url(../image/sky2.jpg)","url(../image/sky3.jpg)","url(../image/sky4.jpg)");
  background-repeat:no-repeat;
  background-attachment:fixed;
  background-size: cover;
