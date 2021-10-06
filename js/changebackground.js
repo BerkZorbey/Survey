@@ -724,7 +724,7 @@ function disablecheckbox_5() {
     }
 
     //background-image değiştirme
-    if(num>45){
+    if(num>60){
         $(".body").css("background-image",url3);
         $(".section").css("background-color","rgba(255, 255, 255, 0.7)");
         $("header").css("background-color","rgba(255, 255, 255, 0.7)");
@@ -732,7 +732,7 @@ function disablecheckbox_5() {
         $("#comment").css("background-color","rgba(255, 255, 255, 0.7)");
         $("p").css("color","rgb(25,25,112)");
     }
-    if(num<45 && num>30){
+    if(num<60 && num>40){
         $(".body").css("background-image",url2);
         $(".section").css("background-color","rgba(244, 234, 253,0.6)");
         $("header").css("background-color","rgba(255, 255, 255, 0.7)");
@@ -740,7 +740,7 @@ function disablecheckbox_5() {
         $("#comment").css("background-color","rgba(255, 255, 255, 0.7)");
         $("p").css("color","rgb(25,25,112)");
     }
-    if(num>15 && num<30){
+    if(num>20 && num<40){
         $(".body").css("background-image",url1);
         $(".section").css("background-color","rgba(255, 255, 255, 0.5)");
         $("header").css("background-color","rgba(255, 255, 255, 0.6)");
@@ -748,7 +748,7 @@ function disablecheckbox_5() {
         $("#comment").css("background-color","rgba(255, 255, 255, 0.6)");
         $("p").css("color","rgb(25,25,112)");
     }
-    if(num < 15){
+    if(num < 20){
         $(".footer p").css("color","rgb(0, 0, 0)");
         $(".body").css("background-image",url);
         $(".section").css("background-color","rgba(255, 255, 255, 0.4)");
