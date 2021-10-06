@@ -11,29 +11,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="shortcut icon" href="survey-icon.ico" type="image/x-icon">
 
-<script>
-    function preload(){
-        var image = new Image();
-       
-        // Image for transition
-        image.src ="image/sky2.jpg";
-        image.src1 ="image/sky3.jpg";
-        image.src2 ="image/sky4.jpg";
-        image.onload = function () {
-          $(".element").css("background-image", 
-          'url("image.src")');
-         $(".element").css("background-image", 
-          'url("image.src1")');
-          $(".element").css("background-image", 
-          'url("image.src2")');
-    };
-       }   
-      </script>
     
 </head>
 
-<body class="body" onload="preload()">
-    
+<body class="body">
+    <div id="preload">
+        <img src="image/sky2.jpg">
+        <img src="image/sky3.jpg">
+        <img src="image/sky4.jpg">
+        
+        </div>
         <header>
             <h1 id="title">Anket Formu</h1>
             <p id="description">Işık Kirliliği Hakkında 20 soruluk bir anket formu</p>

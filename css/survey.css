@@ -234,6 +234,9 @@ input[type=reset]{
     margin-right: auto;
     margin-left: 5%;
 }
+div#preload{
+    display: none;
+}
 
 /*media*/
  @media(max-width:1024px){
