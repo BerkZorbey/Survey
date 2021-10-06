@@ -10,7 +10,7 @@
     --input-reset-bgcolor:#dc3545;
     --font-f-header:serif;
     --font-f-footer:monospace;
-    --font-f-p:Comic Sans MS, Comic Sans, cursive;
+    --font-f-p:cursive;
     --font-f-label:monospace;
 }
 
@@ -29,10 +29,18 @@
 background-position: center;
  font-size:18px;
  
- transition: background-image 1.5s ease;
- -moz-transition:background-image 1.5s ease ;
- -webkit-transition: background-image 1.5s ease;
- -o-transition: background-image 1.5s ease;
+ transition-property: background-image;
+ transition-timing-function: ease;
+ transition-duration: 1.5s;
+ -moz-transition-property: background-image;
+ -moz-transition-timing-function: ease;
+ -moz-transition-duration: 1.5s;
+ -webkit-transition-property: background-image;
+ -webkit-transition-timing-function: ease;
+ -webkit-transition-duration: 1.5s;
+ -o-transition-property: background-image;
+ -o-transition-timing-function: ease;
+ -o-transition-duration: 1.5s;
  
 }
 
