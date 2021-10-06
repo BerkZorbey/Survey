@@ -42,9 +42,8 @@ background-position: center;
  -o-transition-property: background-image;
  -o-transition-timing-function: ease;
  -o-transition-duration: 1.5s;
- 
- 
 }
+
 
 #title{
     display: flex;
